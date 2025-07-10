@@ -11,3 +11,6 @@ It takes the following environment variables:
 
 `PBS_REPOSITORY`
 `PBS_PASSWORD`
+
+To inject a custom root CA certificate, place a .crt file within the `cacerts/` folder
+and build the image.
