@@ -1,5 +1,9 @@
 FROM debian:bookworm
 
+LABEL org.opencontainers.image.source=https://github.com/rfranks-securenet/docker-postgres-pbs-backup
+LABEL org.opencontainers.image.description="Docker image to back up a postgresql database to proxmox backup server"
+LABEL org.opencontainers.image.licenses=Apache-2.0
+
 RUN apt-get update && apt-get install -y curl ca-certificates
 
 COPY proxmox-release-bookworm.gpg /usr/share/keyrings/proxmox-release-bookworm.gpg
